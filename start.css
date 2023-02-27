@@ -1,0 +1,32 @@
+body {
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "green1 green1 green1"
+    "yellow1 red1 blue1"
+    "yellow1 red1 blue1"
+    "orange1 orange1 blue1";
+}
+.green {
+    grid-area: green1 ;
+}
+.yellow {
+    grid-area: yellow1 ;
+}
+.red {
+    grid-area: red1;
+}
+    
+.blue {
+    grid-area: blue1 ;
+}
+.orange {
+    grid-area: orange1 ;
+}
+.nested-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
+}
